@@ -83,8 +83,8 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 	return (locs, preds)
 
 # load our serialized face detector model from disk
-prototxtPath = r'/Users/thiha/Desktop/Jupyter/Face-Mask-Detection-master/face_detector/deploy.prototxt'
-weightsPath = r'/Users/thiha/Desktop/Jupyter/Face-Mask-Detection-master/face_detector/res10_300x300_ssd_iter_140000.caffemodel'
+prototxtPath = r'.../Face-Mask-Detection-master/face_detector/deploy.prototxt'
+weightsPath = r'.../Face-Mask-Detection-master/face_detector/res10_300x300_ssd_iter_140000.caffemodel'
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 # load the face mask detector model from disk
@@ -96,9 +96,9 @@ vs = VideoStream(src=0).start()
 
 
 #Email credentials
-from_email_addr = 'demoemailpython82@gmail.com'
-from_email_password = '82demoemailpython'
-to_email_addr = 'kumarmyanmars@gmail.com'
+from_email_addr = 'ADD EMAIL HERE (SEDNING)'
+from_email_password = 'ADD PASSWORD HERE'
+to_email_addr = 'ADD EMAIL HERE (RECIEVING)'
 
 img_counter = 0
 
